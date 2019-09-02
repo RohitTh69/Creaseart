@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.filter-section form {
+  margin-left: 5rem;
+}
+
+.filter-section form .search-bar {
+  padding: 5px;
+  width: 17rem;
+  border: solid 1px #000;
+  border-right: none 0px #777;
+  font-size: 1rem;
+  color: #ffa300;
+  cursor: text;
+  border-top-left-radius: 0.15rem;
+  border-bottom-left-radius: 0.15rem;
+  outline: none;
+}
+
+.filter-section form .btn-search {
+  padding: 5px;
+  text-align: center;
+  width: 2rem;
+  background: #fff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: solid 1px #000;
+  border-left: none 0px #777;
+  margin: 0 0.5rem 0 -0.2rem;
+  cursor: pointer;
+  border-top-right-radius: 0.15rem;
+  border-bottom-right-radius: 0.15rem;
+  outline: none;
+}
+
+.filter-section form .btn-search .fa-search {
+  color: #000;
+}
+
+.filter-section form .select-bar {
+  padding: 7px 1rem;
+  border: solid 1px #777;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 0.5rem 0 0;
+  border-radius: 0.15rem;
+  outline: none;
+}
+
+.show-results h5 {
+  font-weight: bold;
+}
+
+.show-results div {
+  display: -ms-grid;
+  display: grid;
+  grid: 1rem/ auto auto;
+}
+
+.show-results div .sort {
+  text-align: right;
+}
+
+.vendor-list {
+  margin: 4rem 0 0 5rem;
+  max-width: 41rem;
+}
+
+.vendor-list .list-item {
+  margin-top: 3rem;
+  max-width: 41rem;
+  max-height: 18rem;
+  padding: 1rem;
+  position: relative;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.06);
+}
+
+.vendor-list .list-item img {
+  position: absolute;
+  bottom: 9rem;
+  height: 10rem;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+}
+
+.vendor-list .list-item .list-item-head-primary,
+.vendor-list .list-item .list-item-head-sub,
+.vendor-list .list-item .btn-rating {
+  margin-left: 50%;
+}
+
+.vendor-list .list-item .services {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 3rem;
+}
+
+.vendor-list .list-item .services ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.vendor-list .list-item .services ul .service-icons {
+  position: unset !important;
+  height: 1rem !important;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.vendor-list .list-item .services ul .fa-map-marker,
+.vendor-list .list-item .services ul .fa-credit-card {
+  color: #C34C48;
+}
+
+.vendor-list .list-item .list-item-btn {
+  position: absolute;
+  right: 10%;
+  bottom: -8%;
+  width: 9.5rem;
+}
+
+.vendor-list .list-item .list-item-btn button {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.vendor-list .list-item .list-item-btn button .fa-calendar {
+  color: #C34C48;
+}
+
+.contact-section {
+  padding: 1rem 2rem;
+  color: #2B2B52;
+  display: -ms-grid;
+  display: grid;
+  grid: auto;
+  position: absolute;
+  right: 9%;
+  top: 25%;
+  -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 0.25rem;
+}
+
+.contact-section .myForm {
+  padding: 0.5rem;
+  background: #fff;
+}
+
+.contact-section .myForm .contact-head,
+.contact-section .myForm .contact-subhead {
+  padding: 1rem 0 0 0;
+  background: #fff;
+}
+
+.contact-section .myForm input {
+  outline: none;
+  width: 20rem;
+  height: 2rem;
+  border-style: solid;
+  border-color: #2B2B52;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.contact-section .myForm .submit,
+.contact-section .myForm .reset {
+  display: block;
+  background: #2B2B52;
+  margin-top: 2rem;
+  border-style: solid;
+  border-color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #fff;
+  height: 3rem;
+  width: 20rem;
+  font-size: 1rem;
+}
+
+.contact-section .myForm .submit:hover,
+.contact-section .myForm .reset:hover {
+  background: #333945;
+  color: #fff;
+}
+
+.contact-section .myForm .reset {
+  margin-top: 1rem;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.contact-section .myForm h6 {
+  color: #C34C48;
+  background: #fff;
+}
+
+@media (max-width: 2560px) {
+  body {
+    margin: 0 9rem;
+  }
+  .vendor-list {
+    max-width: 56rem;
+  }
+  .vendor-list .list-item {
+    max-width: 56rem;
+  }
+  .contact-section {
+    right: 11.5%;
+    top: 17%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .vendor-list {
+    max-width: 49rem;
+  }
+  .vendor-list .list-item {
+    max-width: 49rem;
+  }
+  .contact-section {
+    right: 6%;
+    top: 21%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
