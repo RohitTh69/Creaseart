@@ -117,7 +117,7 @@ body {
       height: 25em;
       backface-visibility: hidden;
       transition: all .6s ease;
-      box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
       
         &--front {
             background-color: #FFF; 
@@ -190,7 +190,7 @@ body {
         position: relative;
         // background-color: $list-item-body-color;
         border-radius: 0.5rem;
-        box-shadow: 0 0 14px 0 rgba(0,0,0,0.06);
+        box-shadow: 0 0 14px 0 rgba(0,0,0,0.2);
 
         img {
             position: absolute;
