@@ -8,8 +8,8 @@
 }
 
 body {
-  padding: 0 15rem;
-  font-size: 20px;
+  padding: 0 5rem;
+  font-size: 15px;
 }
 
 body .container-1 {
@@ -24,7 +24,7 @@ body .container-1 {
 
 body .container-1 span img {
   height: 25rem;
-  width: 50rem;
+  width: 45rem;
 }
 
 body .container-1 span ul li {
@@ -64,8 +64,25 @@ body .review-section {
       grid-template-columns: 1fr 1fr;
 }
 
-body .review-section .ratings div {
-  margin-top: 1rem;
+body .review-section .ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+body .review-section .ratings .progress {
+  margin-top: 1.25rem;
+  background-color: #fff;
+  height: 1rem;
+  font-size: 0.5rem;
+}
+
+body .review-section .ratings .progress .checked {
+  color: orange;
 }
 
 body .review-section .review {
@@ -180,7 +197,7 @@ body .review-section .review {
 }
 
 .vendor-list {
-  margin: 4rem 0 0 5rem;
+  margin: 8rem 0 0 5rem;
   max-width: 56rem;
 }
 
@@ -191,8 +208,8 @@ body .review-section .review {
   padding: 1rem;
   position: relative;
   border-radius: 0.5rem;
-  -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.06);
 }
 
 .vendor-list .list-item img {
