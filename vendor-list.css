@@ -85,8 +85,8 @@ body {
   padding: 1rem;
   position: relative;
   border-radius: 0.5rem;
-  -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
 }
 
 .vendor-list .list-item img {
@@ -153,8 +153,8 @@ body {
   position: absolute;
   right: 9%;
   top: 25%;
-  -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;
 }
 
