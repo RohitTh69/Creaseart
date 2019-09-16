@@ -6,6 +6,7 @@ $color-secondary-light: #FFB900;
 $color-secondary-dark: #FF7730;
 $color-tertiary-light: #2998FF;
 $color-tertiary-dark: #5643FA;
+$list-item-body-color: #fff;
 
 *,
 *::before,
@@ -18,6 +19,8 @@ $color-tertiary-dark: #5643FA;
 body {
     padding: 0 5rem;
     font-size: 15px;
+    background-color: aliceblue;
+    font-family: 'Lato', sans-serif;
 
     .container-1 {
         display: grid;
@@ -76,7 +79,8 @@ body {
                 background-color: #fff;
                 height: 1rem;
                 font-size: 0.5rem;
-            
+                background-color: aliceblue;
+                
                 .checked {
                     color: orange;
                 }
@@ -95,87 +99,134 @@ body {
     margin: 2em auto;
     text-align: center;
     padding: 4em 0;
-}
+
+    #content-2, #content-3, #content-4{
+        display: none;
+    }
+
+    #content-1, #content-2, #content-3, #content-4 {
+        padding-top: 50px;
+    }
   
-.cards {
-    display: flex;
-    justify-content: space-evenly;
-}
+// .cards {
+//     display: flex;
+//     justify-content: space-evenly;
+// }
   
-.card {
-    width: 25%;
-    position: relative;
-    height: 25em;
-    perspective: 150em;
-    border: none;
+// .card {
+//     width: 25%;
+//     position: relative;
+//     height: 25em;
+//     perspective: 150em;
+//     border: none;
     
-    &__side {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 25em;
-      backface-visibility: hidden;
-      transition: all .6s ease;
-      box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
+//     &__side {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 25em;
+//       backface-visibility: hidden;
+//       transition: all .6s ease;
+//       box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
       
-        &--front {
-            background-color: #FFF; 
-        }
+//         &--front {
+//             background-color: #FFF; 
+//         }
         
-        &--back {
-            color: #FFF;
-            transform: rotateY(180deg);
+//         &--back {
+//             color: #FFF;
+//             transform: rotateY(180deg);
             
-            &-1 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);;        
-            }
+//             &-1 {
+//             background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);;        
+//             }
             
-            &-2 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-            }
+//             &-2 {
+//             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+//             }
             
-            &-3 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-            }
+//             &-3 {
+//             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+//             }
+//         }
+//     }
+
+//     &:hover &__side--front {
+//       transform: rotateY(-180deg);
+//     }
+    
+//     &:hover &__side--back {
+//       transform: rotate(0);
+//     }
+    
+//     &__description {
+//       text-transform: uppercase;
+//       font-size: 5em;
+//       padding: 1em 0;
+//     }
+// }
+
+// .btn:link, .btn:visited {
+// 	text-decoration: none;
+// 	text-transform: uppercase;
+// 	box-shadow: 0px 4px 10px rgba(0,0,0, 0.2);
+// }
+
+// .btn-white {
+// 	border-radius: 0px;
+// 	background-color: #fff;
+// 	padding: 10px 30px !important;
+// 	text-align: center;
+// 	color: rgba(238, 35, 17, 1) !important;
+// 	transition: 0.2s;
+// }
+
+// .btn-white:hover {
+// 	background-color: /*transparent*/ rgba(0, 17, 113, 0.9);
+// 	color: #fff !important;
+// 	transition: 0.2s;
+// 	box-shadow: none;
+// }
+
+    .tabs {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+
+        .tablinks {
+            width: 25%;
+            background-color: #BD3935;
+            border-color: #BD3935;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 0;
+        }
+
+        .active {
+            background-color: #fff;
+            color: #BD3935;
+            outline: none;
         }
     }
 
-    &:hover &__side--front {
-      transform: rotateY(-180deg);
-    }
-    
-    &:hover &__side--back {
-      transform: rotate(0);
-    }
-    
-    &__description {
-      text-transform: uppercase;
-      font-size: 5em;
-      padding: 1em 0;
-    }
-}
+    table {
+        margin: 0;
+        width: 50%;
+        overflow-x: auto;
 
-.btn:link, .btn:visited {
-	text-decoration: none;
-	text-transform: uppercase;
-	box-shadow: 0px 4px 10px rgba(0,0,0, 0.2);
-}
+        tr {
+            color: #BD3935;
 
-.btn-white {
-	border-radius: 0px;
-	background-color: #fff;
-	padding: 10px 30px !important;
-	text-align: center;
-	color: rgba(238, 35, 17, 1) !important;
-	transition: 0.2s;
-}
+            td {
+                padding-top: 20px;
 
-.btn-white:hover {
-	background-color: /*transparent*/ rgba(0, 17, 113, 0.9);
-	color: #fff !important;
-	transition: 0.2s;
-	box-shadow: none;
+                input {
+                    width: 40px;
+                }
+            }
+        }
+    }
 }
 
 .vendor-list {
@@ -188,7 +239,7 @@ body {
         max-height: 18rem;
         padding: 1rem;
         position: relative;
-        // background-color: $list-item-body-color;
+        background-color: $list-item-body-color;
         border-radius: 0.5rem;
         box-shadow: 0 0 14px 0 rgba(0,0,0,0.2);
 
@@ -205,6 +256,11 @@ body {
         .list-item-head-sub,
         .btn-rating {
             margin-left: 50%;
+        }
+        
+        .btn-danger {
+            background-color: #B52421;
+            border-color: #B52421;
         }
 
         .services {
@@ -239,11 +295,19 @@ body {
             button {
                 display: block;
                 margin-bottom: 2rem;
-
-                .fa-calendar {
-                    color: #C34C48;
-                }
             }
+
+            .btn-primary, .btn-warning {
+                color: #fff;
+                background-color: #363435;
+                border-color: #363435;
+            }
+
+            // .btn-warning {
+            //     color: #fff;
+            //     background: linear-gradient(to right, #b5241e, #363435);
+            //     border-color: linear-gradient(to right, #b5241e, #363435);
+            // }
         }        
     }
 }

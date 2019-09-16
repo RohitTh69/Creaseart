@@ -111,7 +111,7 @@
 
     <section class="content">
 
-        <div class="cards">
+        <!-- <div class="cards">
 
             <div class="card">
 
@@ -191,7 +191,152 @@
 
             </div>
 
+        </div> -->
+
+        <div class="tabs">
+                
+            <button class="tablinks active" onclick="contentPanel(event, 'content-1')">MEN</button>
+            <button class="tablinks" onclick="contentPanel(event, 'content-2')">WOMEN</button>
+            <button class="tablinks" onclick="contentPanel(event, 'content-3')">HOUSEHOLD</button>
+            <button class="tablinks" onclick="contentPanel(event, 'content-4')">XYZ</button>
+
         </div>
+
+        <div id="content-1" class="tab-content">
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Clothes List</th>
+                        <th>Price (&#8377;)</th>
+                        <th>Qty</th>
+                    </tr>
+
+                    <tr>
+                        <td>T-Shirt</td>
+                        <td>60</td>
+                        <td> <input type="Number" min="0" value="0"> </td>
+                    </tr>
+
+                    <tr>
+                        <td>Jeans</td>
+                        <td>80</td>
+                        <td><input type="Number" min="0" value="0"></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>Payable Amount</td>
+                        <td></td>
+                        <td>260+GST</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+        
+        <div id="content-2" class="tab-content">
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Clothes List</th>
+                        <th>Price (&#8377;)</th>
+                        <th>Qty</th>
+                    </tr>
+    
+                    <tr>
+                        <td>T-Shirt</td>
+                        <td>40</td>
+                        <td><input type="Number" min="0" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Jeans</td>
+                        <td>80</td>
+                        <td><input type="Number" min="0" value="0"></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>Payable Amount</td>
+                        <td></td>
+                        <td>260+GST</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div> 
+
+        <div id="content-3" class="tab-content">
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Clothes List</th>
+                        <th>Price (&#8377;)</th>
+                        <th>Qty</th>
+                    </tr>
+    
+                    <tr>
+                        <td>T-Shirt</td>
+                        <td>60</td>
+                        <td><input type="Number" min="0" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Jeans</td>
+                        <td>80</td>
+                        <td><input type="Number" min="0" value="0"></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>Payable Amount</td>
+                        <td></td>
+                        <td>260+GST</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+        
+        <div id="content-4" class="tab-content">
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Clothes List</th>
+                        <th>Price (&#8377;)</th>
+                        <th>Qty</th>
+                    </tr>
+    
+                    <tr>
+                        <td>T-Shirt</td>
+                        <td>60</td>
+                        <td><input type="Number" min="0" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Jeans</td>
+                        <td>0</td>
+                        <td><input type="Number" min="0" value="0"></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>Payable Amount</td>
+                        <td></td>
+                        <td>260+GST</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>  
 
     </section>
 

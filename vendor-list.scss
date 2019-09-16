@@ -1,4 +1,4 @@
-$list-item-body-color: #f0f0f0;
+$list-item-body-color: #fff;
 
 * {
 	margin: 0;
@@ -10,6 +10,10 @@ $list-item-body-color: #f0f0f0;
 body {
 	font-family: "Lato", sans-serif;
     font-weight: 400;
+}
+
+section{
+    background-color: aliceblue;
 }
 
 .filter-section{
@@ -79,15 +83,15 @@ body {
 
 .vendor-list {
     margin: 4rem 0 0 5rem;
-    max-width: 41rem;
+    max-width: 45rem;
 
     .list-item {
         margin-top: 3rem;
-        max-width: 41rem;
+        max-width: 45rem;
         max-height: 18rem;
         padding: 1rem;
         position: relative;
-        // background-color: $list-item-body-color;
+        background-color: $list-item-body-color;
         border-radius: 0.5rem;
         box-shadow: 0 0 14px 0 rgba(0,0,0,0.2);
 
@@ -104,6 +108,11 @@ body {
         .list-item-head-sub,
         .btn-rating {
             margin-left: 50%;
+        }
+
+        .btn-danger {
+            background-color: #B52421;
+            border-color: #B52421;
         }
 
         .services {
@@ -139,10 +148,22 @@ body {
                 display: block;
                 margin-bottom: 2rem;
 
-                .fa-calendar {
-                    color: #C34C48;
-                }
+                // .fa-calendar {
+                //     color: /*#C34C48*/ linear-gradient(to right, #b5241e, #363435);
+                // }
             }
+
+            .btn-primary, .btn-warning {
+                color: #fff;
+                background-color: #363435;
+                border-color: #363435;
+            }
+
+            // .btn-warning {
+            //     color: #fff;
+            //     background: linear-gradient(to right, #b5241e, #363435);
+            //     border-color: linear-gradient(to right, #b5241e, #363435);
+            // }
         }        
     }
 }
@@ -157,6 +178,7 @@ body {
     top: 25%;
     box-shadow: 0 0 14px 0 rgba(0,0,0,0.2);
     border-radius: 0.25rem;
+    background-color: $list-item-body-color;
 
     .myForm{
         padding: 0.5rem;
