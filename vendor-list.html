@@ -1,243 +1,737 @@
-<!DOCTYPE html>
-<html lang="en-au">
-<head>
+<!doctype html>
+<html lang="en">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+        <link rel="stylesheet" type="text/css" href="vendor-list.css">
+        
+        <title>Vendor Search Result</title>
+
+    </head>
+
+    <body>
+
+        <header class="header">
+
+            <div class="logo-box">
+
+                <a href="https://www.creaseart.com"><img src="creaseart_logo.png" alt="logo" class="logo"></a>
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
-    <link rel="stylesheet" type="text/css" href="vendor-list.css">
-
-    <title>Search Result</title>
+            </div>
     
-</head>
-<body>
-
-    <section>
-
-        <div class="filter-section">
-			
-            <form action="" method="GET">
-                        
-                <select name="location" class="select-bar">
-
-                    <option value="" selected disabled hidden>Location</option>
-                    <option value="DLF Phase I">DLF Phase I</option>
-                    <option value="DLF Phase II">DLF Phase II</option>
-                    <option value="Udyog Vihar">Udyog Vihar</option>
-                    <option value="Dundahera Village">Dundahera Village</option>
-                    <option value="Palam Vihar">Palam Vihar</option>
-
-                </select>
-
-                <input id="myInput" type="text" onkeyup="myFunction()" name="search" placeholder="Enter Location" class="search-bar">
+            <div id="myNav" class="nav-box overlay">
+    
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+                <div class="overlay-content">
                 
-                <span>
-                            
-                    <button type="submit" class="btn-search"><i class="fa fa-search"></i></button>
+                    <a href="https://www.creaseart.com">Home</a>
+                    <a href="https://www.creaseart.com/aboutus.html">About</a>
+                    <a href="https://www.creaseart.com/services.html">Services</a>
+                    <a href="https://www.creaseart.com/blog/">Blog</a>
+                    <a href="https://www.creaseart.com/faq.html">FAQs</a>
+                    <a href="https://www.creaseart.com/contact.html">Contact Us</a>
+                    <a href="https://www.creaseart.com/offer-signup.html" class="btn btn-white">Sign Up</a>
     
-                </span>
+                </div>
+    
+            </div>
+    
+            <span class="ham-icon" onclick="openNav()">&#9776;</span>
 
-                <select name="service" class="select-bar">
+            <div class="vendor_list_header">
 
-                    <option value="" selected disabled hidden>Service</option>
-                    <option value="Drycleaning">Drycleaning</option>
-                    <option value="Laundry">Laundry</option>
-                    <option value="Iron and Fold">Iron and Fold</option>
+                <div class='text-box'>
 
-                </select>
+                    <h1 class='vendor_head'>Vendor's Army</h1>
+                    <h5 class='vendor_subhead'>to care for your clothes</h5>
 
-                <select name="delivery-days" class="select-bar">
+                </div>
+            </div>
 
-                    <option value="" selected disabled hidden>Delivery</option>
-                    <option value="2 days">2 days</option>
-                    <option value="3 days">3 days</option>
-                    <option value="4 days">4 days</option>
-                    <option value="5 days">5 days</option>
-                    <option value="6 days">6 days</option>
-                    <option value="7 days">7 days</option>
+        </header>
 
-                </select>
+        <main>
+            
+            <div class="filter-section">
+                
+                <form action="" method="GET">
+                                
+                    <!-- <select name="location" class="select-bar">
+        
+                        <option value="" selected disabled hidden>Location</option>
+                        <option value="DLF Phase I">DLF Phase I</option>
+                        <option value="DLF Phase II">DLF Phase II</option>
+                        <option value="Udyog Vihar">Udyog Vihar</option>
+                        <option value="Dundahera Village">Dundahera Village</option>
+                        <option value="Palam Vihar">Palam Vihar</option>
+        
+                    </select> -->
+        
+                    <input id="myInput" type="text" onkeyup="myFunction()" name="search" placeholder="Enter Location" class="search-bar">
+                        
+                    <span>
+                                    
+                        <button type="submit" class="btn-search"><i class="fa fa-search"></i></button>
+            
+                    </span>
+        
+                    <!-- <select name="service" class="select-bar">
+        
+                        <option value="" selected disabled hidden>Service</option>
+                        <option value="Drycleaning">Drycleaning</option>
+                        <option value="Laundry">Laundry</option>
+                        <option value="Iron and Fold">Iron and Fold</option>
+        
+                    </select> -->
 
-                <select name="rating" class="select-bar">
-
-                    <option value="" selected disabled hidden>Rating</option>
-                    <option value="5 star">5 star</option>
-                    <option value="4-5 star">4-5 star</option>
-                    <option value="3-4 star">3-4 star</option>
-                    <option value="2-3 star">2-3 star</option>
-                    <option value="1-2 star">1-2 star</option>
-                    <option value="0-1 star">0-1 star</option>
-
-                </select>
-
-            </form>
-
-        </div>
-
-        <div class="vendor-list">
-
+                    <button type="submit" class="dryclean">Dry Cleaning</button>
+                    <button type="submit" class="laundry">Laundry</button>
+                    <button type="submit" class="iron-fold">Iron & Fold</button>
+        
+                    <!-- <select name="delivery-days" class="select-bar">
+        
+                        <option value="" selected disabled hidden>Delivery</option>
+                        <option value="2 days">2 days</option>
+                        <option value="3 days">3 days</option>
+                        <option value="4 days">4 days</option>
+                        <option value="5 days">5 days</option>
+                        <option value="6 days">6 days</option>
+                        <option value="7 days">7 days</option>
+        
+                    </select>
+        
+                    <select name="rating" class="select-bar">
+        
+                        <option value="" selected disabled hidden>Rating</option>
+                        <option value="5 star">5 star</option>
+                        <option value="4-5 star">4-5 star</option>
+                        <option value="3-4 star">3-4 star</option>
+                        <option value="2-3 star">2-3 star</option>
+                        <option value="1-2 star">1-2 star</option>
+                        <option value="0-1 star">0-1 star</option>
+        
+                    </select> -->
+        
+                </form>
+        
+            </div>
+        
             <div class="show-results">
+
                 <h5>Vendors in DLF Phase I</h5>
+                        
                 <div>
+
                     <p>Showing 1-10 results out of 100</p>
                     <p class="sort">Sort by</p>
-                </div>                
+
+                </div>          
+
                 <hr>
+
             </div>
 
-            <div class="list-item">
+            <div class="vendor-list">
 
-                <img src="creaseart_head.jpg" alt="vendor-image">
+                <div class="card-deck">
 
-                <span class="list-item-head">
+                    <div class="card">
 
-                    <h4 class="list-item-head-primary">Vendor Name</h4>
-                    <h6 class="list-item-head-sub">Vendor's Address</h6>
-                    <button class="btn btn-danger btn-rating">4.5 <i class="fa fa-star"></i></button>
+                        <img class='vendor-image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBbtsJOnaocyhBA3OKfK36ydAPy2GKUsR4F3dJ5nGjLDQTX4nuKLn7fOM&s=10g" alt="vendor-image">
+
+                        <div class='card-desc'>
+                            
+                            <div class="list-item-head">
+
+                                <span> 
+                                    
+                                    <h4 class="list-item-head-primary">Vendor Name</h4>
+                                    <h6 class="list-item-head-sub">Vendor's Address</h6>
+                                
+                                </span>
+
+                                <span>
+                                    
+                                    <button class="btn btn-danger btn-rating">4.5 <i class="fa fa-star"></i></button>
+                                
+                                </span>
+                                
+                            </div>
+
+                            <div class="services">
+
+                                <ul type="none">
+
+                                    <li><img class="service-icons" src="dry_cleaning_icon.png"> Drycleaning</li>
+                                    <li><img class="service-icons" src="laundry_icon.png"> Laundry</li>
+                                    <li><img class="service-icons" src="wash_and_iron_icon.png"> Iron and Fold</li>
+
+                                </ul>
+
+                                <ul type="none">
+
+                                    <li><img class="service-icons" src="feedback_delivery_icon.png"> Delivery within 2 days</li>
+                                    <li><i class="fa fa-map-marker"></i> 3 km</li>
+
+                                </ul>
+
+                                <ul type="none">
+
+                                    <li><i class="fa fa-credit-card"></i> Cash | Debit/Credit Card | UPI | Wallets</li>
+
+                                </ul>
+                                
+                            </div>
+
+                            <span class="list-item-btn">
+
+                                <a href="Vendor Details.html" target="_blank"><button type="submit" class="btn btn-primary"><i class="fa fa-eye"></i> View</button></a>
+                                <button type="submit" class="btn btn-warning"><i class="fa fa-calendar"></i> Schedule Pickup</button>
+                                
+                            </span>
+                        
+                        </div>
                     
-                </span>
+                    </div>
 
-                <div class="services">
+                    <div class="card">
 
-                    <ul type="none">
+                        <img class='vendor-image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBbtsJOnaocyhBA3OKfK36ydAPy2GKUsR4F3dJ5nGjLDQTX4nuKLn7fOM&s=10g" alt="vendor-image">
+    
+                        <div class='card-desc'>
+                                
+                            <div class="list-item-head">
+    
+                                <span> 
+                                        
+                                    <h4 class="list-item-head-primary">Vendor Name</h4>
+                                    <h6 class="list-item-head-sub">Vendor's Address</h6>
+                                    
+                                </span>
+    
+                                <span>
+                                        
+                                    <button class="btn btn-danger btn-rating">4.5 <i class="fa fa-star"></i></button>
+                                    
+                                </span>
+                                    
+                            </div>
+    
+                            <div class="services">
+    
+                                <ul type="none">
+    
+                                    <li><img class="service-icons" src="dry_cleaning_icon.png"> Drycleaning</li>
+                                    <li><img class="service-icons" src="laundry_icon.png"> Laundry</li>
+                                    <li><img class="service-icons" src="wash_and_iron_icon.png"> Iron and Fold</li>
+    
+                                </ul>
+    
+                                <ul type="none">
+    
+                                    <li><img class="service-icons" src="feedback_delivery_icon.png"> Delivery within 2 days</li>
+                                    <li><i class="fa fa-map-marker"></i> 3 km</li>
+    
+                                </ul>
+    
+                                <ul type="none">
+    
+                                    <li><i class="fa fa-credit-card"></i> Cash | Debit/Credit Card | UPI | Wallets</li>
+    
+                                </ul>
+                                    
+                            </div>
+    
+                            <span class="list-item-btn">
+    
+                                <a href="Vendor Details.html" target="_blank"><button type="submit" class="btn btn-primary"><i class="fa fa-eye"></i> View</button></a>
+                                <button type="submit" class="btn btn-warning"><i class="fa fa-calendar"></i> Schedule Pickup</button>
+                                    
+                            </span>
+                            
+                        </div>
+                        
+                    </div>
 
-                        <li><img class="service-icons" src="dry_cleaning_icon.png"> Drycleaning</li>
-                        <li><img class="service-icons" src="laundry_icon.png"> Laundry</li>
-                        <li><img class="service-icons" src="wash_and_iron_icon.png"> Iron and Fold</li>
-                    </ul>
+                    <div class="card">
 
-                    <ul type="none">
-
-                        <li><img class="service-icons" src="feedback_delivery_icon.png"> Delivery within 2 days</li>
-                        <li><i class="fa fa-map-marker"></i> 3 km</li>
-                    </ul>
-
-                    <ul type="none">
-
-                        <li><i class="fa fa-credit-card"></i> Cash | Debit/Credit Card | UPI | Wallets</li>
-                    </ul>
-                </div>
-
-                <span class="list-item-btn">
-
-                    <a href="Vendor Details.html" target="_blank"><button type="submit" class="btn btn-primary"><i class="fa fa-eye"></i> View</button></a>
-                    <button type="submit" class="btn btn-warning"><i class="fa fa-calendar"></i> Schedule Pickup</button>
-                    
-                </span>
-            </div>
-
-            <div class="list-item">
-
-                <img src="creaseart_head.jpg" alt="vendor-image">
-
-                <span class="list-item-head">
-
-                    <h4 class="list-item-head-primary">Vendor Name</h4>
-                    <h6 class="list-item-head-sub">Vendor's Address</h6>
-                    <button class="btn btn-danger btn-rating">4.5 <i class="fa fa-star"></i></button>
-                    
-                </span>
-
-                <div class="services">
-
-                    <ul type="none">
-
-                        <li><img class="service-icons" src="dry_cleaning_icon.png"> Drycleaning</li>
-                        <li><img class="service-icons" src="laundry_icon.png"> Laundry</li>
-                        <li><img class="service-icons" src="wash_and_iron_icon.png"> Iron and Fold</li>
-                    </ul>
-
-                    <ul type="none">
-
-                        <li><img class="service-icons" src="feedback_delivery_icon.png"> Delivery within 2 days</li>
-                        <li><i class="fa fa-map-marker"></i> 3 km</li>
-                    </ul>
-
-                    <ul type="none">
-
-                        <li><i class="fa fa-credit-card"></i> Cash | Debit/Credit Card | UPI | Wallets</li>
-                    </ul>
-                </div>
-
-                <span class="list-item-btn">
-
-                    <a href="Vendor Details.html" target="_blank"><button type="submit" class="btn btn-primary"><i class="fa fa-eye"></i> View</button></a>
-                    <button type="submit" class="btn btn-warning"><i class="fa fa-calendar"></i> Schedule Pickup</button>
-                    
-                </span>
-            </div>
-
-            <div class="list-item">
-
-                <img src="creaseart_head.jpg" alt="vendor-image">
-
-                <span class="list-item-head">
-
-                    <h4 class="list-item-head-primary">Vendor Name</h4>
-                    <h6 class="list-item-head-sub">Address</h6>
-                    <button class="btn btn-danger btn-rating">4.5 <i class="fa fa-star"></i></button>
-                    
-                </span>
-
-                <div class="services">
-
-                    <ul type="none">
-
-                        <li><img class="service-icons" src="dry_cleaning_icon.png"> Drycleaning</li>
-                        <li><img class="service-icons" src="laundry_icon.png"> Laundry</li>
-                        <li><img class="service-icons" src="wash_and_iron_icon.png"> Iron and Fold</li>
-                    </ul>
-
-                    <ul type="none">
-
-                        <li><img class="service-icons" src="feedback_delivery_icon.png"> Delivery within 2 days</li>
-                        <li><i class="fa fa-map-marker"></i> 3 km</li>
-                    </ul>
-
-                    <ul type="none">
-
-                        <li><i class="fa fa-credit-card"></i> Cash | Debit/Credit Card | UPI | Wallets</li>
-                    </ul>
-                </div>
-
-                <span class="list-item-btn">
-
-                    <a href="Vendor Details.html" target="_blank"><button type="submit" class="btn btn-primary"><i class="fa fa-eye"></i> View</button></a>
-                    <button type="submit" class="btn btn-warning"><i class="fa fa-calendar"></i> Schedule Pickup</button>
-                    
-                </span>
-            </div>
-        </div>
+                        <img class='vendor-image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBbtsJOnaocyhBA3OKfK36ydAPy2GKUsR4F3dJ5nGjLDQTX4nuKLn7fOM&s=10g" alt="vendor-image">
         
-        <span class="contact-section">
+                        <div class='card-desc'>
+                                    
+                            <div class="list-item-head">
+        
+                                <span> 
+                                            
+                                    <h4 class="list-item-head-primary">Vendor Name</h4>
+                                    <h6 class="list-item-head-sub">Vendor's Address</h6>
+                                        
+                                </span>
+        
+                                <span>
+                                            
+                                    <button class="btn btn-danger btn-rating">4.5 <i class="fa fa-star"></i></button>
+                                        
+                                </span>
+                                        
+                            </div>
+        
+                            <div class="services">
+        
+                                <ul type="none">
+        
+                                    <li><img class="service-icons" src="dry_cleaning_icon.png"> Drycleaning</li>
+                                    <li><img class="service-icons" src="laundry_icon.png"> Laundry</li>
+                                    <li><img class="service-icons" src="wash_and_iron_icon.png"> Iron and Fold</li>
+        
+                                </ul>
+        
+                                <ul type="none">
+        
+                                    <li><img class="service-icons" src="feedback_delivery_icon.png"> Delivery within 2 days</li>
+                                    <li><i class="fa fa-map-marker"></i> 3 km</li>
+        
+                                </ul>
+        
+                                <ul type="none">
+        
+                                    <li><i class="fa fa-credit-card"></i> Cash | Debit/Credit Card | UPI | Wallets</li>
+        
+                                </ul>
+                                        
+                            </div>
+        
+                            <span class="list-item-btn">
+        
+                                <a href="Vendor Details.html" target="_blank"><button type="submit" class="btn btn-primary"><i class="fa fa-eye"></i> View</button></a>
+                                <button type="submit" class="btn btn-warning"><i class="fa fa-calendar"></i> Schedule Pickup</button>
+                                        
+                            </span>
+                                
+                        </div>
+                            
+                    </div>
 
-            <form action="" target="_self" method="POST" class="myForm">
+                </div>
+
+                <div class="card-deck">
+
+                    <div class="card">
+
+                        <img class='vendor-image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBbtsJOnaocyhBA3OKfK36ydAPy2GKUsR4F3dJ5nGjLDQTX4nuKLn7fOM&s=10g" alt="vendor-image">
+
+                        <div class='card-desc'>
+                            
+                            <div class="list-item-head">
+
+                                <span> 
+                                    
+                                    <h4 class="list-item-head-primary">Vendor Name</h4>
+                                    <h6 class="list-item-head-sub">Vendor's Address</h6>
+                                
+                                </span>
+
+                                <span>
+                                    
+                                    <button class="btn btn-danger btn-rating">4.5 <i class="fa fa-star"></i></button>
+                                
+                                </span>
+                                
+                            </div>
+
+                            <div class="services">
+
+                                <ul type="none">
+
+                                    <li><img class="service-icons" src="dry_cleaning_icon.png"> Drycleaning</li>
+                                    <li><img class="service-icons" src="laundry_icon.png"> Laundry</li>
+                                    <li><img class="service-icons" src="wash_and_iron_icon.png"> Iron and Fold</li>
+
+                                </ul>
+
+                                <ul type="none">
+
+                                    <li><img class="service-icons" src="feedback_delivery_icon.png"> Delivery within 2 days</li>
+                                    <li><i class="fa fa-map-marker"></i> 3 km</li>
+
+                                </ul>
+
+                                <ul type="none">
+
+                                    <li><i class="fa fa-credit-card"></i> Cash | Debit/Credit Card | UPI | Wallets</li>
+
+                                </ul>
+                                
+                            </div>
+
+                            <span class="list-item-btn">
+
+                                <a href="Vendor Details.html" target="_blank"><button type="submit" class="btn btn-primary"><i class="fa fa-eye"></i> View</button></a>
+                                <button type="submit" class="btn btn-warning"><i class="fa fa-calendar"></i> Schedule Pickup</button>
+                                
+                            </span>
+                        
+                        </div>
+                    
+                    </div>
+
+                    <div class="card">
+
+                        <img class='vendor-image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBbtsJOnaocyhBA3OKfK36ydAPy2GKUsR4F3dJ5nGjLDQTX4nuKLn7fOM&s=10g" alt="vendor-image">
+    
+                        <div class='card-desc'>
+                                
+                            <div class="list-item-head">
+    
+                                <span> 
+                                        
+                                    <h4 class="list-item-head-primary">Vendor Name</h4>
+                                    <h6 class="list-item-head-sub">Vendor's Address</h6>
+                                    
+                                </span>
+    
+                                <span>
+                                        
+                                    <button class="btn btn-danger btn-rating">4.5 <i class="fa fa-star"></i></button>
+                                    
+                                </span>
+                                    
+                            </div>
+    
+                            <div class="services">
+    
+                                <ul type="none">
+    
+                                    <li><img class="service-icons" src="dry_cleaning_icon.png"> Drycleaning</li>
+                                    <li><img class="service-icons" src="laundry_icon.png"> Laundry</li>
+                                    <li><img class="service-icons" src="wash_and_iron_icon.png"> Iron and Fold</li>
+    
+                                </ul>
+    
+                                <ul type="none">
+    
+                                    <li><img class="service-icons" src="feedback_delivery_icon.png"> Delivery within 2 days</li>
+                                    <li><i class="fa fa-map-marker"></i> 3 km</li>
+    
+                                </ul>
+    
+                                <ul type="none">
+    
+                                    <li><i class="fa fa-credit-card"></i> Cash | Debit/Credit Card | UPI | Wallets</li>
+    
+                                </ul>
+                                    
+                            </div>
+    
+                            <span class="list-item-btn">
+    
+                                <a href="Vendor Details.html" target="_blank"><button type="submit" class="btn btn-primary"><i class="fa fa-eye"></i> View</button></a>
+                                <button type="submit" class="btn btn-warning"><i class="fa fa-calendar"></i> Schedule Pickup</button>
+                                    
+                            </span>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="card">
+
+                        <img class='vendor-image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBbtsJOnaocyhBA3OKfK36ydAPy2GKUsR4F3dJ5nGjLDQTX4nuKLn7fOM&s=10g" alt="vendor-image">
+        
+                        <div class='card-desc'>
+                                    
+                            <div class="list-item-head">
+        
+                                <span> 
+                                            
+                                    <h4 class="list-item-head-primary">Vendor Name</h4>
+                                    <h6 class="list-item-head-sub">Vendor's Address</h6>
+                                        
+                                </span>
+        
+                                <span>
+                                            
+                                    <button class="btn btn-danger btn-rating">4.5 <i class="fa fa-star"></i></button>
+                                        
+                                </span>
+                                        
+                            </div>
+        
+                            <div class="services">
+        
+                                <ul type="none">
+        
+                                    <li><img class="service-icons" src="dry_cleaning_icon.png"> Drycleaning</li>
+                                    <li><img class="service-icons" src="laundry_icon.png"> Laundry</li>
+                                    <li><img class="service-icons" src="wash_and_iron_icon.png"> Iron and Fold</li>
+        
+                                </ul>
+        
+                                <ul type="none">
+        
+                                    <li><img class="service-icons" src="feedback_delivery_icon.png"> Delivery within 2 days</li>
+                                    <li><i class="fa fa-map-marker"></i> 3 km</li>
+        
+                                </ul>
+        
+                                <ul type="none">
+        
+                                    <li><i class="fa fa-credit-card"></i> Cash | Debit/Credit Card | UPI | Wallets</li>
+        
+                                </ul>
+                                        
+                            </div>
+        
+                            <span class="list-item-btn">
+        
+                                <a href="Vendor Details.html" target="_blank"><button type="submit" class="btn btn-primary"><i class="fa fa-eye"></i> View</button></a>
+                                <button type="submit" class="btn btn-warning"><i class="fa fa-calendar"></i> Schedule Pickup</button>
+                                        
+                            </span>
+                                
+                        </div>
+                            
+                    </div>
+
+                </div>
+
+                <div class="card-deck">
+
+                    <div class="card">
+
+                        <img class='vendor-image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBbtsJOnaocyhBA3OKfK36ydAPy2GKUsR4F3dJ5nGjLDQTX4nuKLn7fOM&s=10g" alt="vendor-image">
+
+                        <div class='card-desc'>
+                            
+                            <div class="list-item-head">
+
+                                <span> 
+                                    
+                                    <h4 class="list-item-head-primary">Vendor Name</h4>
+                                    <h6 class="list-item-head-sub">Vendor's Address</h6>
+                                
+                                </span>
+
+                                <span>
+                                    
+                                    <button class="btn btn-danger btn-rating">4.5 <i class="fa fa-star"></i></button>
+                                
+                                </span>
+                                
+                            </div>
+
+                            <div class="services">
+
+                                <ul type="none">
+
+                                    <li><img class="service-icons" src="dry_cleaning_icon.png"> Drycleaning</li>
+                                    <li><img class="service-icons" src="laundry_icon.png"> Laundry</li>
+                                    <li><img class="service-icons" src="wash_and_iron_icon.png"> Iron and Fold</li>
+
+                                </ul>
+
+                                <ul type="none">
+
+                                    <li><img class="service-icons" src="feedback_delivery_icon.png"> Delivery within 2 days</li>
+                                    <li><i class="fa fa-map-marker"></i> 3 km</li>
+
+                                </ul>
+
+                                <ul type="none">
+
+                                    <li><i class="fa fa-credit-card"></i> Cash | Debit/Credit Card | UPI | Wallets</li>
+
+                                </ul>
+                                
+                            </div>
+
+                            <span class="list-item-btn">
+
+                                <a href="Vendor Details.html" target="_blank"><button type="submit" class="btn btn-primary"><i class="fa fa-eye"></i> View</button></a>
+                                <button type="submit" class="btn btn-warning"><i class="fa fa-calendar"></i> Schedule Pickup</button>
+                                
+                            </span>
+                        
+                        </div>
+                    
+                    </div>
+
+                    <div class="card">
+
+                        <img class='vendor-image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBbtsJOnaocyhBA3OKfK36ydAPy2GKUsR4F3dJ5nGjLDQTX4nuKLn7fOM&s=10g" alt="vendor-image">
+    
+                        <div class='card-desc'>
+                                
+                            <div class="list-item-head">
+    
+                                <span> 
+                                        
+                                    <h4 class="list-item-head-primary">Vendor Name</h4>
+                                    <h6 class="list-item-head-sub">Vendor's Address</h6>
+                                    
+                                </span>
+    
+                                <span>
+                                        
+                                    <button class="btn btn-danger btn-rating">4.5 <i class="fa fa-star"></i></button>
+                                    
+                                </span>
+                                    
+                            </div>
+    
+                            <div class="services">
+    
+                                <ul type="none">
+    
+                                    <li><img class="service-icons" src="dry_cleaning_icon.png"> Drycleaning</li>
+                                    <li><img class="service-icons" src="laundry_icon.png"> Laundry</li>
+                                    <li><img class="service-icons" src="wash_and_iron_icon.png"> Iron and Fold</li>
+    
+                                </ul>
+    
+                                <ul type="none">
+    
+                                    <li><img class="service-icons" src="feedback_delivery_icon.png"> Delivery within 2 days</li>
+                                    <li><i class="fa fa-map-marker"></i> 3 km</li>
+    
+                                </ul>
+    
+                                <ul type="none">
+    
+                                    <li><i class="fa fa-credit-card"></i> Cash | Debit/Credit Card | UPI | Wallets</li>
+    
+                                </ul>
+                                    
+                            </div>
+    
+                            <span class="list-item-btn">
+    
+                                <a href="Vendor Details.html" target="_blank"><button type="submit" class="btn btn-primary"><i class="fa fa-eye"></i> View</button></a>
+                                <button type="submit" class="btn btn-warning"><i class="fa fa-calendar"></i> Schedule Pickup</button>
+                                    
+                            </span>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="card">
+
+                        <img class='vendor-image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBbtsJOnaocyhBA3OKfK36ydAPy2GKUsR4F3dJ5nGjLDQTX4nuKLn7fOM&s=10g" alt="vendor-image">
+        
+                        <div class='card-desc'>
+                                    
+                            <div class="list-item-head">
+        
+                                <span> 
+                                            
+                                    <h4 class="list-item-head-primary">Vendor Name</h4>
+                                    <h6 class="list-item-head-sub">Vendor's Address</h6>
+                                        
+                                </span>
+        
+                                <span>
+                                            
+                                    <button class="btn btn-danger btn-rating">4.5 <i class="fa fa-star"></i></button>
+                                        
+                                </span>
+                                        
+                            </div>
+        
+                            <div class="services">
+        
+                                <ul type="none">
+        
+                                    <li><img class="service-icons" src="dry_cleaning_icon.png"> Drycleaning</li>
+                                    <li><img class="service-icons" src="laundry_icon.png"> Laundry</li>
+                                    <li><img class="service-icons" src="wash_and_iron_icon.png"> Iron and Fold</li>
+        
+                                </ul>
+        
+                                <ul type="none">
+        
+                                    <li><img class="service-icons" src="feedback_delivery_icon.png"> Delivery within 2 days</li>
+                                    <li><i class="fa fa-map-marker"></i> 3 km</li>
+        
+                                </ul>
+        
+                                <ul type="none">
+        
+                                    <li><i class="fa fa-credit-card"></i> Cash | Debit/Credit Card | UPI | Wallets</li>
+        
+                                </ul>
+                                        
+                            </div>
+        
+                            <div class="list-item-btn">
+        
+                                <a href="Vendor Details.html" target="_blank"><button type="btn_submit" class="btn btn-primary"><i class="fa fa-eye"></i> View</button></a>
+                                <button type="submit" class="btn btn-warning"><i class="fa fa-calendar"></i> Schedule Pickup</button>
+                                        
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <aside>
+            <i class="fa fa-mobile" id="contact_icon"></i>
+            <span id="contact-section">
+
+                <i class="fa fa-times" id="cross"></i>
+
+                <form action="" target="_self" method="POST" class="myForm">
+                        
+                    <h5 class="contact-head">Contact Us</h5>
             
-                <h4 class="contact-head">Contact Us</h4>
+                    <h6 class="required">* Required</h6>
+                            
+                    <h6 class="contact-subhead">Full Name *</h6>
+                    <input type="text" required>
+            
+                    <h6 class="contact-subhead">Phone Number *</h6>
+                    <input type="text" required>
+            
+                    <h6 class="contact-subhead">Email</h6>
+                    <input type="mail">         
+                    <button class="submit">Get a Call Back</button>
+                    <input type="reset" placeholder="Reset" class="reset">
+            
+                </form>
+            
+            </span>
 
-                <h6>* Required</h6>
-                
-                <h5 class="contact-subhead">Full Name *</h5>
-                <input type="text" required>
+        </aside>
 
-                <h5 class="contact-subhead">Phone Number *</h5>
-                <input type="text" required>
+        <footer>
 
-                <h5 class="contact-subhead">Email</h5>
-                <input type="mail">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="1" d="M0,224L80,192C160,160,320,96,480,101.3C640,107,800,181,960,192C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+        </footer>
 
-                <button class="submit">Get a Call Back</button>
-                <input type="reset" placeholder="Reset" class="reset">
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-            </form>
+        <script type="text/javascript" src="./script.js"></script>
+        <script type="text/javascript" src="./vendor-list.js"></script>
 
-        </span>
+    </body>
 
-    </section>
-    <!-- <script src="script.js"></script> -->
-</body>
 </html>
