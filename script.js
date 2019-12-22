@@ -24,6 +24,14 @@ function contentPanel(evt, contentId) {
 
   evt.currentTarget.className += " active";
 
+  let itemPrice = document.getElementsByClassName('item_price')[0];
+  let itemPriceTotal = document.getElementsByClassName('item_price_total')[0];
+  let priceTotal = document.getElementsByClassName('priceTotal')[0];
+
+  const calculate = () => {
+    priceTotal[0].innerHTML = parseInt(itemPrice.value) * parseInt(itemPriceTotal.value);
+  }
+
 }
 
 function openNav() {

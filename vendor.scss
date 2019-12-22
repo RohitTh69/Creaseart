@@ -26,28 +26,75 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
-    
-        span {
-    
-            img {
-                height: 25rem;
-                width: 45rem;                
+
+        .thumbnail_carousel {
+
+            #imageContent-1,
+            #imageContent-2, 
+            #imageContent-3, 
+            #imageContent-4{
+                img {
+                    height: 24rem;
+                    width: 100%;
+                }
             }
+        
+            #imageContent-2, 
+            #imageContent-3, 
+            #imageContent-4{
+                display: none;
+            }
+
+            .image_tabs {
+                margin-top: 1rem;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+        
+                .image_tablinks {
+                    width: 100%;
+                    height: 8rem;
+                }
+        
+                .active_image {
+                    opacity: 0.5;
+                }
+            }
+        }   
     
+        .vendor-summary {
+            padding: 1rem 4rem;
+
+            .list-item-head {
+                .list-item-head-primary {
+                    font-size: 1.75rem;
+                }
+            }
+
+            .review_summary {
+                display: flex;
+
+                .fa-star {
+                    margin-right: 1rem;
+                }
+            }
+
             ul {
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
                 li {
+                    display: grid;
+                    text-align: -webkit-center;
                     .service-icons {
-                        height: 1.25rem;
+                        height: 1.75rem;
                         width: unset;
                     }
     
                     font-size: 1.25rem;
                 }
             }
-        }
-    
-        .vendor-summary {
-            padding-left: 7rem;
         }
     }
     
@@ -68,28 +115,20 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-        .ratings {
+        .glyphicon { margin-right:5px;}
+        .rating .glyphicon {font-size: 22px;}
+        .rating-num { margin-top:0px;font-size: 54px; }
+        .progress { margin-bottom: 5px;}
+        .progress-bar { text-align: left; }
+        .rating-desc .col-md-3 {padding-right: 0px;}
+        .sr-only { margin-left: 5px;overflow: visible;clip: auto; }
 
-            display: flex;
-            flex-flow: column;
-
-            .progress {
-
-                margin-top: 1.25rem;
-                background-color: #fff;
-                height: 1rem;
-                font-size: 0.5rem;
-                background-color: aliceblue;
-                
-                .checked {
-                    color: orange;
+        .rating {
+            .checked {
+                &:before {
+                    color: #007BFF !important;
                 }
             }
-        }
-
-        .review {
-            padding-left: 2rem;
-            text-align: justify;
         }
     }
 }
@@ -189,12 +228,12 @@ body {
 // 	box-shadow: none;
 // }
 
-    .tabs {
+    .tabs, .image_tabs {
         display: flex;
         justify-content: space-between;
         box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
 
-        .tablinks {
+        .tablinks, .image_tablinks {
             width: 25%;
             background-color: #BD3935;
             border-color: #BD3935;
