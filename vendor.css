@@ -139,6 +139,7 @@ body .review-section .progress {
 
 body .review-section .progress-bar {
   text-align: left;
+  background-color: #5B5A5A;
 }
 
 body .review-section .rating-desc .col-md-3 {
@@ -152,7 +153,11 @@ body .review-section .sr-only {
 }
 
 body .review-section .rating .checked:before {
-  color: #007BFF !important;
+  color: #5B5A5A !important;
+}
+
+body .review-section .rating .fa-2x {
+  font-size: 1rem;
 }
 
 .content {
@@ -214,82 +219,47 @@ body .review-section .rating .checked:before {
   width: 40px;
 }
 
-.vendor-list {
-  margin: 8rem 0 0 5rem;
-  max-width: 56rem;
+@media screen and (max-width: 1240px) {
+  body {
+    padding: 0 2rem;
+  }
 }
 
-.vendor-list .list-item {
-  margin-top: 3rem;
-  max-width: 56rem;
-  max-height: 18rem;
-  padding: 1rem;
-  position: relative;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
+@media screen and (max-width: 900px) {
+  body .container-1 {
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+  }
+  body .container-1 .vendor-summary .list-item-head .list-item-head-primary {
+    font-size: 1.5rem;
+  }
+  body .container-1 .vendor-summary .list-item-head .list-item-head-sub {
+    font-size: 1.25rem;
+  }
+  body .container-1 .vendor-summary {
+    padding: 1rem 0rem 1rem 4rem;
+  }
+  body .container-1 .vendor-summary ul li {
+    font-size: 1rem;
+  }
+  body .container-1 .vendor-summary ul li .service-icons {
+    height: 1.5rem;
+  }
 }
 
-.vendor-list .list-item img {
-  position: absolute;
-  bottom: 9rem;
-  height: 10rem;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 5px;
+@media screen and (max-width: 800px) {
+  body .container-1 .vendor-summary ul li {
+    font-size: 0.8rem;
+  }
+  body .review-section .rating .fa-2x {
+    font-size: 0.8rem;
+  }
 }
 
-.vendor-list .list-item .list-item-head-primary,
-.vendor-list .list-item .list-item-head-sub,
-.vendor-list .list-item .btn-rating {
-  margin-left: 50%;
-}
-
-.vendor-list .list-item .btn-danger {
-  background-color: #B52421;
-  border-color: #B52421;
-}
-
-.vendor-list .list-item .services {
-  display: -ms-grid;
-  display: grid;
-  margin-top: 3rem;
-}
-
-.vendor-list .list-item .services ul li {
-  display: inline;
-  margin: 0 1rem;
-}
-
-.vendor-list .list-item .services ul .service-icons {
-  position: unset !important;
-  height: 1rem !important;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.vendor-list .list-item .services ul .fa-map-marker,
-.vendor-list .list-item .services ul .fa-credit-card {
-  color: #C34C48;
-}
-
-.vendor-list .list-item .list-item-btn {
-  position: absolute;
-  right: 10%;
-  bottom: -8%;
-  width: 9.5rem;
-}
-
-.vendor-list .list-item .list-item-btn button {
-  display: block;
-  margin-bottom: 2rem;
-}
-
-.vendor-list .list-item .list-item-btn .btn-primary, .vendor-list .list-item .list-item-btn .btn-warning {
-  color: #fff;
-  background-color: #363435;
-  border-color: #363435;
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 1rem;
+    font-size: 11px;
+  }
 }
 /*# sourceMappingURL=vendor.css.map */
