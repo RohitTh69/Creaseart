@@ -262,4 +262,52 @@ body .review-section .rating .fa-2x {
     font-size: 11px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+  body .container-1 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  body .container-1 .vendor-summary {
+    padding: 2rem 1rem;
+  }
+  body .review-section {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  body .review-section .text-right {
+    text-align: unset !important;
+  }
+  body .review-section #home-reviews {
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .content table {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .content .tabs .tablinks {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .content .tabs {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .content .tabs .tablinks {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=vendor.css.map */
