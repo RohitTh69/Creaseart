@@ -861,6 +861,9 @@ body aside .slideIn {
   body main .vendor-list {
     width: 100vw;
   }
+  body main .card .card-desc .list-item-btn .btn-warning, body main .card .card-desc .list-item-btn .btn-primary {
+    width: 38vw;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -880,6 +883,12 @@ body aside .slideIn {
 }
 
 @media screen and (max-width: 360px) {
+  body .header .ham-icon {
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
   body main .vendor-list {
     padding: 0 1rem;
   }
@@ -890,8 +899,8 @@ body aside .slideIn {
     height: 45px;
   }
   body .header .ham-icon {
-    padding: 0px 12px;
-    font-size: 26px;
+    padding: 0px 9px;
+    font-size: 29px;
   }
   body .header .vendor_list_header .text-box .vendor_head {
     font-size: 30px;
