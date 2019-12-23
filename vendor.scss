@@ -268,6 +268,17 @@ body {
     }
 }
 
+@media screen and (max-width: 600px) {
+
+    body .container-1 .thumbnail_carousel #imageContent-1 img, body .container-1 .thumbnail_carousel #imageContent-2 img, body .container-1 .thumbnail_carousel #imageContent-3 img, body .container-1 .thumbnail_carousel #imageContent-4 img {
+        height: auto;
+    }
+
+    body .container-1 .thumbnail_carousel .image_tabs .image_tablinks {
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 440px) {
 
     .content table {
