@@ -259,6 +259,10 @@ body {
         grid-template-columns: 1fr;
     }
 
+    body .review-section .row.rating-desc {
+        margin: auto;
+    }
+
     body .review-section .text-right {
         text-align: unset !important;
     }
@@ -275,14 +279,14 @@ body {
     }
 
     body .container-1 .thumbnail_carousel .image_tabs .image_tablinks {
-        height: auto;
+        height: 6rem;
     }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 484px) {
 
-    .content table {
-        width: 100%;
+    body .container-1 .thumbnail_carousel .image_tabs .image_tablinks {
+        height: 5rem;
     }
 }
 
@@ -290,6 +294,17 @@ body {
 
     .content .tabs .tablinks {
         font-size: 0.75rem;
+    }
+
+    .content table {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    body .container-1 .thumbnail_carousel .image_tabs .image_tablinks {
+        height: 4rem;
     }
 }
 
@@ -302,5 +317,12 @@ body {
 
     .content .tabs .tablinks {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    body .container-1 .thumbnail_carousel .image_tabs .image_tablinks {
+        height: 3.5rem;
     }
 }

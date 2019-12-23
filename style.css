@@ -485,7 +485,7 @@ body {
 
 	.btn-white {
 		border-radius: 0px;
-		background-color: rgba(0, 17, 113, 0.9);
+		background-color: transparent;
 		padding: unset;
 		text-align: center;
 		color: #fff !important;
@@ -494,7 +494,7 @@ body {
 
 	.btn-white:hover {
 		border: none;
-		background-color: rgba(0, 17, 113, 0.9);
+		background-color: transparent;
 		transition: none;
 		padding: 0px !important;
 	}

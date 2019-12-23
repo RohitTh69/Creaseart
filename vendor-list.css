@@ -700,6 +700,10 @@ body aside .slideIn {
 }
 
 @media screen and (max-width: 640px) {
+  body .header {
+    -webkit-clip-path: unset;
+            clip-path: unset;
+  }
   body .header .closebtn, body .header .ham-icon {
     display: block;
   }
@@ -763,7 +767,7 @@ body aside .slideIn {
   }
   body .header .overlay .overlay-content .btn-white {
     border-radius: 0px;
-    background-color: rgba(0, 17, 113, 0.9);
+    background-color: transparent;
     padding: unset;
     text-align: center;
     color: #fff !important;
