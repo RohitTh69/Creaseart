@@ -381,6 +381,16 @@ body {
 	.join-box {
 		width: 81vh;
 	}
+
+	.spinner-box {
+		position: absolute;
+		left: 68%;
+		top: 27%;
+	}
+	
+	.spinner {
+		height: 201px;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -412,6 +422,21 @@ body {
 	.join-box {
 		width: 78vh;
 		padding: 5px 0px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.nav-box a {
+		padding: 8px;
+		font-size: 0.9rem;
+	}
+
+	.spinner-box {
+		left: 72%;
+	}
+
+	.spinner {
+		height: 180px;
 	}
 }
 
@@ -504,6 +529,7 @@ body {
 	}
 
 	.text-box {
+		top: 60%;
 		left: 17%;
 	}
 
@@ -530,6 +556,16 @@ body {
 
 	.search-bar {
 		width: 265px;
+	}
+
+	.spinner-box {
+		display: block;
+		left: 33%;
+		top: 20%;
+	}
+
+	.spinner {
+		height: 200px;
 	}
 }
 
@@ -568,7 +604,11 @@ body {
 
 	.text-box {
 		left: 16%;
-	}	
+	}
+	
+	.spinner-box {
+		left: 31%;
+	}
 }
 
 @media screen and (max-width: 520px) {
@@ -635,6 +675,10 @@ body {
 	.btn-search {
 		padding: 18px 20px;
 	}
+
+	.spinner-box {
+		left: 28%;
+	}	
 }
 
 @media screen and (max-width: 414px) {
@@ -651,6 +695,10 @@ body {
 	.search-bar {
 	    width: 240px;
 	}
+
+	.spinner-box {
+		left: 26%;
+	}	
 }
 
 @media screen and (max-width: 384px) {
@@ -720,6 +768,10 @@ body {
 	.search-bar {
 		width: 214px;
 	}
+
+	.spinner-box {
+		left: 24%;
+	}	
 }
 
 @media screen and (max-width: 360px) {
@@ -777,5 +829,13 @@ body {
 
 	.search-bar, .btn-search {
 		font-size: 12px !important;
+	}
+
+	.spinner-box {
+		left: 23%;
+	}
+
+	.spinner {
+		height: 177px;
 	}
 }

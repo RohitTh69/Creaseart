@@ -366,6 +366,7 @@ body main .card .card-desc .list-item-btn .btn-primary {
   background-color: transparent;
   color: #006E5F;
   font-size: 0.75rem;
+  border-radius: 0;
 }
 
 body main .card .card-desc .list-item-btn .btn-warning {
@@ -373,6 +374,7 @@ body main .card .card-desc .list-item-btn .btn-warning {
   background-color: #006E5F;
   border-color: none;
   font-size: 0.75rem;
+  border-radius: 0;
 }
 
 body aside #contact_icon {

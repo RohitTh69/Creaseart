@@ -325,6 +325,7 @@ body {
                         background-color: transparent;
                         color: $card-desc-color;
                         font-size: 0.75rem;
+                        border-radius: 0;
                     }
                     
                     .btn-warning {
@@ -332,6 +333,7 @@ body {
                         background-color: $card-desc-color;
                         border-color: none;
                         font-size: 0.75rem;
+                        border-radius: 0;                                                                                                                                                                                                                                                      ;
                     }
                 }
             }
