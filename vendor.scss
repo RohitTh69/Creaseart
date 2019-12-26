@@ -115,6 +115,14 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
+        h3 {
+            color: #000;
+        }
+
+        .customer-reviews {
+            padding-top: 20px;
+        }
+
         .glyphicon { margin-right:5px;}
         .rating .glyphicon {font-size: 22px;}
         .rating-num { margin-top:0px;font-size: 54px; }
@@ -143,20 +151,20 @@ body {
     text-align: center;
     padding: 4em 0;
 
-    #content-2, #content-3, #content-4{
+    #content-2, #content-3, #content-4, #tableContent-2, #tableContent-3, #tableContent-4{
         display: none;
     }
 
-    #content-1, #content-2, #content-3, #content-4 {
+    #content-1, #content-2, #content-3, #content-4, #tableContent-1, #tableContent-2, #tableContent-3, #tableContent-4 {
         padding-top: 50px;
     }
 
-    .tabs, .image_tabs {
+    .tableTabs, .image_tabs {
         display: flex;
         justify-content: space-between;
         box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
 
-        .tablinks, .image_tablinks {
+        .tableTabLinks, .image_tablinks {
             width: 25%;
             background-color: #BD3935;
             border-color: #BD3935;
@@ -192,6 +200,12 @@ body {
 }
 
 // Responsive
+
+@media screen and (max-width: 1366px) {
+    body .review-section h3 {
+        font-size: 1.5rem;
+    }
+}
 
 @media screen and (max-width: 1240px) {
     body {
@@ -267,8 +281,12 @@ body {
         text-align: unset !important;
     }
 
-    body .review-section #home-reviews {
+    body .review-section .testimonial-main {
         padding-top: 3rem;
+    }
+
+    body .review-section h3 {
+        font-size: 1.25rem;
     }
 }
 
@@ -292,7 +310,7 @@ body {
 
 @media screen and (max-width: 440px) {
 
-    .content .tabs .tablinks {
+    .content .Tabletabs .tableTabLinks {
         font-size: 0.75rem;
     }
 
@@ -310,12 +328,12 @@ body {
 
 @media screen and (max-width: 384px) {
 
-    .content .tabs {
+    .content .tableTabs {
         display: grid;
         justify-content: unset;
     }
 
-    .content .tabs .tablinks {
+    .content .tableTabs .tableTabLinks {
         width: 100%;
     }
 }

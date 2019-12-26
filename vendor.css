@@ -120,6 +120,14 @@ body .review-section {
       grid-template-columns: 1fr 1fr;
 }
 
+body .review-section h3 {
+  color: #000;
+}
+
+body .review-section .customer-reviews {
+  padding-top: 20px;
+}
+
 body .review-section .glyphicon {
   margin-right: 5px;
 }
@@ -167,15 +175,15 @@ body .review-section .rating .fa-2x {
   padding: 4em 0;
 }
 
-.content #content-2, .content #content-3, .content #content-4 {
+.content #content-2, .content #content-3, .content #content-4, .content #tableContent-2, .content #tableContent-3, .content #tableContent-4 {
   display: none;
 }
 
-.content #content-1, .content #content-2, .content #content-3, .content #content-4 {
+.content #content-1, .content #content-2, .content #content-3, .content #content-4, .content #tableContent-1, .content #tableContent-2, .content #tableContent-3, .content #tableContent-4 {
   padding-top: 50px;
 }
 
-.content .tabs, .content .image_tabs {
+.content .tableTabs, .content .image_tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,7 +194,7 @@ body .review-section .rating .fa-2x {
           box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-.content .tabs .tablinks, .content .tabs .image_tablinks, .content .image_tabs .tablinks, .content .image_tabs .image_tablinks {
+.content .tableTabs .tableTabLinks, .content .tableTabs .image_tablinks, .content .image_tabs .tableTabLinks, .content .image_tabs .image_tablinks {
   width: 25%;
   background-color: #BD3935;
   border-color: #BD3935;
@@ -195,7 +203,7 @@ body .review-section .rating .fa-2x {
   padding: 8px 0;
 }
 
-.content .tabs .active, .content .image_tabs .active {
+.content .tableTabs .active, .content .image_tabs .active {
   background-color: #fff;
   color: #BD3935;
   outline: none;
@@ -217,6 +225,12 @@ body .review-section .rating .fa-2x {
 
 .content table tr td input {
   width: 40px;
+}
+
+@media screen and (max-width: 1366px) {
+  body .review-section h3 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 1240px) {
@@ -284,8 +298,11 @@ body .review-section .rating .fa-2x {
   body .review-section .text-right {
     text-align: unset !important;
   }
-  body .review-section #home-reviews {
+  body .review-section .testimonial-main {
     padding-top: 3rem;
+  }
+  body .review-section h3 {
+    font-size: 1.25rem;
   }
 }
 
@@ -305,7 +322,7 @@ body .review-section .rating .fa-2x {
 }
 
 @media screen and (max-width: 440px) {
-  .content .tabs .tablinks {
+  .content .Tabletabs .tableTabLinks {
     font-size: 0.75rem;
   }
   .content table {
@@ -320,14 +337,14 @@ body .review-section .rating .fa-2x {
 }
 
 @media screen and (max-width: 384px) {
-  .content .tabs {
+  .content .tableTabs {
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
   }
-  .content .tabs .tablinks {
+  .content .tableTabs .tableTabLinks {
     width: 100%;
   }
 }

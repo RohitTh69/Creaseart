@@ -1,22 +1,22 @@
 
 
-function contentPanel(evt, contentId) {
+function tableContentPanel(evt, contentId) {
     
-  let i, tabcontent, tablinks;
+  let i, tableTabcontent, tableTabLinks;
   
-  tabcontent = document.getElementsByClassName("tab-content");
+  tableTabcontent = document.getElementsByClassName("tableTab-content");
   
-  for (i = 0; i < tabcontent.length; i++) {
+  for (i = 0; i < tableTabcontent.length; i++) {
       
-    tabcontent[i].style.display = "none";
+    tableTabcontent[i].style.display = "none";
 
   }
   
-  tablinks = document.getElementsByClassName("tablinks");
+  tableTabLinks = document.getElementsByClassName("tableTabLinks");
 
-  for (i = 0; i < tablinks.length; i++) {
+  for (i = 0; i < tableTabLinks.length; i++) {
 
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tableTabLinks[i].className = tableTabLinks[i].className.replace(" active", "");
 
   }
 
